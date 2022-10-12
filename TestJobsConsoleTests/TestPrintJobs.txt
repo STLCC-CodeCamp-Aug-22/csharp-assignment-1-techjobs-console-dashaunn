@@ -1,0 +1,26 @@
+Welcome to LaunchCode's TechJobs App!
+
+View Jobs by (type 'x' to quit):
+0 - Search
+1 - List
+
+Search by:
+0 - Skill
+1 - Employer
+2 - Location
+3 - Position Type
+4 - All
+
+Search term: 
+
+*****
+name: Full Stack Developer
+employer: Buzzbold
+location: Saint Louis
+position type: Web - Full Stack
+core competency: Javascript
+*****
+
+View Jobs by (type 'x' to quit):
+0 - Search
+1 - List
