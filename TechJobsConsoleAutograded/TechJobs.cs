@@ -137,40 +137,28 @@ namespace TechJobsConsole
         {
 
             bool termIsFound = false;
-            
+
             foreach (Dictionary<string, string> job in someJobs)
             {
-                if (job.Count > 0 && !termIsFound)
+                if (someJobs.Count > 0 & !termIsFound)
                 {
-                    Console.WriteLine("*****");
+                    Console.WriteLine(Environment.NewLine + "*****");
 
                     foreach (KeyValuePair<string, string> kvp in job)
                     {
                         Console.WriteLine($"{kvp.Key}: {kvp.Value}");
                     }
                     Console.WriteLine("*****");
-                    Console.WriteLine(Environment.NewLine);
                 }
-                //else if (job.Count < 1)
-
-                //{
-                //    termIsFound = true;
-                //    Console.WriteLine("No resuls found....");
-                //}
 
             }
 
-            foreach (Dictionary<string, string> job in someJobs)
-            
-                if (job.Count == 0)
-                
-                    termIsFound = true;
-                    Console.WriteLine("No results found");
-                
-                /* For some reason this code only runs
-                  when I omit brackets. Also when a search term does exist */
-            
-            
+            if (someJobs.Count == 0)
+            {
+                termIsFound = true;
+                Console.WriteLine("No results");
+            }
+
         }
      }
 }
